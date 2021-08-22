@@ -58,6 +58,15 @@ I provide all of the model to test.
 |openvino|0.0595|
 |tensorrt|0.0084|
 
+**MobileNetV2**
+|Name|Time(s)|
+|:---|:--|
+|torch gpu|0.0106|
+|torch cpu|0.0522|
+|onnx|0.0192|
+|openvino|0.0166|
+|tensorrt|0.0030|
+
 
 ## Test
 ### torch
