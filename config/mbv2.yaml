@@ -1,0 +1,36 @@
+batch_size: 24
+clip: false
+decay1: 190
+decay2: 220
+epoch: 250
+gender: false
+gpu_train: true
+image_size: 512
+in_channel:
+- 32
+- 96
+- 1280
+loc_weight: 2.0
+min_sizes:
+- - 16
+  - 32
+- - 64
+  - 128
+- - 256
+  - 512
+name: mobilenet_v2
+ngpu: 1
+out_channel: 256
+pretrain: true
+return_layers:
+  '13': 2
+  '18': 3
+  '5': 1
+steps:
+- 8
+- 16
+- 32
+variance:
+- 0.1
+- 0.2
+width_mult: 1

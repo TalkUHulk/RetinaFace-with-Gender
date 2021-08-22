@@ -1,0 +1,35 @@
+batch_size: 12
+clip: false
+decay1: 70
+decay2: 90
+epoch: 100
+gender: false
+gpu_train: true
+image_size: 840
+in_channel:
+- 512
+- 1024
+- 2048
+loc_weight: 2.0
+min_sizes:
+- - 16
+  - 32
+- - 64
+  - 128
+- - 256
+  - 512
+name: Resnet50
+ngpu: 2
+out_channel: 256
+pretrain: false
+return_layers:
+  layer2: 1
+  layer3: 2
+  layer4: 3
+steps:
+- 8
+- 16
+- 32
+variance:
+- 0.1
+- 0.2
